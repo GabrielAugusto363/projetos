@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0D0D0D;
+}
+
+header{
+    padding-right: 30px;
+    background-color: #0D0D0D;
+    display: flex;
+    height: 70px;
+}
+
+.red {
+    color: #E50914;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+ header h1 {
+    padding: 10px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header nav{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px; 
+    border-radius: 6px;
+    background-color: #E50914;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    background-color: #b20710;
+    
+}
+
+.principal{
+    background-image: 
+    url("img/musculação.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    align-items: center; 
+}
+
+.conteudo{
+    margin: 70px;
+    
+}
+
+.conteudo p{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.branco{
+    color: #FFFFFF;
+}
+
+.verm_claro{
+    color: #d10e04;
+}
+
+.red_escuro{
+    color: #fd1205;
+}
+
+.btn{
+    color: #FFFFFF;
+    background-color: #E50914;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #b20710;
+    transition: 0.3s;
+}
+
+.titulo_2{
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    margin:20px;
+}
+
+.itens{
+    padding: 20px;
+}
+
+.treinos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+
+.card{
+    text-align: center;
+    background-color:#1a1a1a;
+    border-radius: 10px;
+    height: 450px;
+    width: 300px;
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.saiba_mais{
+    color: #FFFFFF;
+    background-color: #E50914;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.saiba_mais:hover {
+    background-color: #b20710;
+    
+}
+
+.titulo_3{
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    margin:20px;
+}
+
+.planos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.card_2 {
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+    width: 280px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #2a2a2a;
+}
+
+.card_2:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    border: 1px solid #E50914;
+}
+
+.card_2 h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card_2 p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E50914;
+    margin: 15px 0;
+}
+
+.card_2 ul {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.card_2 hr {
+    border: 1px solid #333;
+    margin: 10px 0;
+}
+
+.card_2 a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #E50914;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.titulo_4{
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+
+}
+
+.iframe_1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+iframe{
+    
+    border-radius: 50px;
+    padding: 40px ;
+    width: 500px;
+    height: 300px;
+}
+
+footer{
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 10px;
+}
+
+footer p{
+    padding: 5px;
+}

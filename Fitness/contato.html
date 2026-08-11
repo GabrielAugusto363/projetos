@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="treinos.html">Treinos</a>
+            <a href="nutricao.html">Nutrição</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+            <a href="index.html">Início</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2 class="titulo_2">CONTATO</h2>
+
+        <!-- SEÇÃO PRINCIPAL: INFO + FORMULÁRIO -->
+        <section class="contato">
+
+            <!-- COLUNA ESQUERDA: informações de contato -->
+            <div class="info">
+
+                <h2 class="info_titulo">Estamos aqui para ajudar</h2>
+                <p class="info_desc">Seja para tirar uma dúvida sobre treino, sugerir um conteúdo ou propor uma parceria — nossa equipe responde em até 24 horas.</p>
+
+                <div class="info_item">
+                    <span class="info_icone">📧</span>
+                    <div>
+                        <p class="info_label">E-mail</p>
+                        <p class="info_valor">contato@topfit.com.br</p>
+                    </div>
+                </div>
+
+                <div class="info_item">
+                    <span class="info_icone">📍</span>
+                    <div>
+                        <p class="info_label">Localização</p>
+                        <p class="info_valor">São Sebastião do Paraíso, MG — Brasil</p>
+                    </div>
+                </div>
+
+                <div class="info_item">
+                    <span class="info_icone">⏰</span>
+                    <div>
+                        <p class="info_label">Resposta em</p>
+                        <p class="info_valor">Até 24 horas úteis</p>
+                    </div>
+                </div>
+
+                <p class="redes_titulo">Redes Sociais</p>
+                <div class="redes">
+                    <a href="#" class="rede_btn">Instagram</a>
+                    <a href="#" class="rede_btn">YouTube</a>
+                    <a href="#" class="rede_btn">TikTok</a>
+                </div>
+
+            </div>
+
+            <!-- COLUNA DIREITA: formulário -->
+            <div class="formulario">
+
+                <h2 class="form_titulo">Envie uma mensagem</h2>
+                <p class="form_desc">Preencha o formulário e entraremos em contato o mais rápido possível.</p>
+
+                <form action="#" method="get">
+
+                    <div class="form_linha">
+                        <div class="form_grupo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form_grupo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="" disabled selected>Selecione o assunto</option>
+                            <option>Dúvida sobre treinos</option>
+                            <option>Dúvida sobre nutrição</option>
+                            <option>Sugestão de conteúdo</option>
+                            <option>Parceria ou colaboração</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn_enviar">ENVIAR MENSAGEM</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- SEÇÃO FAQ -->
+        <section class="faq">
+
+            <h2 class="faq_titulo">Perguntas Frequentes</h2>
+
+            <div class="faq_lista">
+
+                <details class="faq_item">
+                    <summary>O conteúdo do IRONMIND é gratuito? <span class="faq_icone">+</span></summary>
+                    <p>Sim! Todo o conteúdo disponível no site — treinos, receitas e artigos do blog — é 100% gratuito. Nossa missão é democratizar o acesso a informações de qualidade sobre saúde e fitness.</p>
+                </details>
+
+                <details class="faq_item">
+                    <summary>Os treinos são adequados para iniciantes absolutos? <span class="faq_icone">+</span></summary>
+                    <p>Sim. Temos protocolos desenhados para quem nunca treinou antes. Recomendamos começar pelo "Fullbody para Iniciantes" e progredir conforme a adaptação do seu corpo.</p>
+                </details>
+
+                <details class="faq_item">
+                    <summary>Vocês oferecem consultoria personalizada? <span class="faq_icone">+</span></summary>
+                    <p>No momento não oferecemos consultoria individual. Para acompanhamento personalizado, recomendamos buscar um personal trainer ou nutricionista esportivo.</p>
+                </details>
+
+                <details class="faq_item">
+                    <summary>Como posso contribuir com conteúdo para o blog? <span class="faq_icone">+</span></summary>
+                    <p>Adoramos colaborações! Se você é profissional da área de saúde ou educação física, envie uma proposta pelo formulário acima selecionando "Parceria ou colaboração".</p>
+                </details>
+
+                <details class="faq_item">
+                    <summary>Com que frequência vocês publicam conteúdo novo? <span class="faq_icone">+</span></summary>
+                    <p>Publicamos pelo menos 2 artigos novos por semana no blog e atualizamos nossa seção de treinos e receitas mensalmente.</p>
+                </details>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>📍 Rua Luís Rodrigues</p>
+        <p>📞 (11) 99999-9999</p>
+        <p>© 2026 Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

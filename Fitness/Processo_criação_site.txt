@@ -1,0 +1,3 @@
+Um dono de academia queria modernizar o negócio e pediu para o nosso grupo criar um site completo. Nós pensamos em algo simples, mas funcional, e desenvolvemos um site com quatro abas principais: Treino, Nutrição, Contato e Sobre.
+Na aba de Treino, colocamos dicas e planos de exercícios; em Nutrição, conteúdos sobre alimentação saudável; em Contato, um formulário e links para redes sociais; e em Sobre, a história e valores da academia.
+Nos organizamos para cuidar do design e da programação, garantindo que o site fosse bonito, responsivo e fácil de usar. No final, entregamos um projeto que deixou o cliente satisfeito e ajudou a dar uma cara mais moderna para a academia.

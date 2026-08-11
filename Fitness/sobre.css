@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0D0D0D;
+}
+
+/* ── HEADER ── */
+header {
+    padding-right: 30px;
+    background-color: #0D0D0D;
+    display: flex;
+    height: 70px;
+}
+
+.red  { color: #E50914; }
+.white { color: #FFFFFF; }
+
+header h1 {
+    padding: 10px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 6px;
+    background-color: #E50914;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    background-color: #b20710;
+}
+
+/* ── HERO SOBRE ── */
+.hero-sobre {
+    background: linear-gradient(135deg, #1a0000 0%, #0D0D0D 50%, #1a0000 100%);
+    border-bottom: 3px solid #E50914;
+    padding: 80px 60px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-sobre .texto {
+    flex: 1;
+}
+
+.hero-sobre .texto h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: #FFFFFF;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-sobre .texto h2 span {
+    color: #E50914;
+}
+
+.hero-sobre .texto p {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.hero-sobre .destaque {
+    flex: 0 0 auto;
+    background-color: #E50914;
+    color: #FFFFFF;
+    padding: 40px 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.hero-sobre .destaque .numero {
+    font-size: 64px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1;
+}
+
+.hero-sobre .destaque .label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 8px;
+}
+
+/* ── SEÇÃO TÍTULOS ── */
+.titulo-secao {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 20px 10px;
+    text-transform: uppercase;
+}
+
+.titulo-secao span {
+    color: #E50914;
+}
+
+.divisor {
+    width: 60px;
+    height: 3px;
+    background-color: #E50914;
+    margin: 10px auto 40px;
+    border-radius: 2px;
+}
+
+/* ── MISSÃO / VISÃO / VALORES ── */
+.mvv {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 40px 60px;
+    flex-wrap: wrap;
+}
+
+.mvv-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 35px 30px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.mvv-card:hover {
+    border-color: #E50914;
+    box-shadow: 0 10px 25px rgba(229, 9, 20, 0.15);
+}
+
+.mvv-card .icone {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.mvv-card h3 {
+    color: #E50914;
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mvv-card p {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ── DIFERENCIAIS ── */
+.diferenciais {
+    background-color: #111111;
+    padding: 60px 40px;
+}
+
+.diferenciais-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.dif-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #1a1a1a;
+    border-left: 4px solid #E50914;
+    border-radius: 8px;
+    padding: 20px 25px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.dif-item:hover {
+    background-color: #222222;
+}
+
+.dif-item .icone {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.dif-item .info h4 {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.dif-item .info p {
+    color: #888888;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* ── ESTATÍSTICAS ── */
+.stats {
+    background: linear-gradient(90deg, #E50914, #b20710);
+    padding: 50px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.stat .numero {
+    font-size: 52px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1;
+}
+
+.stat .label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+/* ── EQUIPE ── */
+.equipe {
+    padding: 60px 40px;
+}
+
+.equipe-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.membro {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 30px 25px;
+    width: 220px;
+    text-align: center;
+    border: 1px solid #2a2a2a;
+    transition: 0.3s;
+}
+
+.membro:hover {
+    border-color: #E50914;
+}
+
+.membro .avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #E50914;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin: 0 auto 15px;
+}
+
+.membro h4 {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.membro p {
+    color: #E50914;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ── FOOTER ── */
+footer {
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    line-height: 2;
+}
