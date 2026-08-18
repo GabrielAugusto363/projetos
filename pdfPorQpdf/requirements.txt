@@ -1,0 +1,5 @@
+Flask== 3.0.3
+pypdf== 4.3.1
+pdf2docx== 0.5.8
+Werkzeug== 3.0.4
+pikepdf== 10.11.0

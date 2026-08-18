@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Tools - Comprimir, Juntar, Dividir e Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>📄 PDF Tools</h1>
+        <p>Comprima, divida, junte e converta seus PDFs — tudo em um só lugar.</p>
+    </header>
+
+    <nav class="abas">
+        <button class="aba-btn ativo" data-aba="juntar">Juntar PDFs</button>
+        <button class="aba-btn" data-aba="dividir">Dividir PDF</button>
+        <button class="aba-btn" data-aba="comprimir">Comprimir PDF</button>
+        <button class="aba-btn" data-aba="pdf-word">PDF → Word</button>
+        <button class="aba-btn" data-aba="word-pdf">Word → PDF</button>
+    </nav>
+
+    <main>
+        <!-- JUNTAR -->
+        <section class="aba-conteudo ativo" id="juntar">
+            <h2>Juntar vários PDFs em um só</h2>
+            <form id="form-juntar">
+                <input type="file" name="arquivos" accept=".pdf" multiple required>
+                <button type="submit">Juntar PDFs</button>
+            </form>
+            <div class="status" id="status-juntar"></div>
+        </section>
+
+        <!-- DIVIDIR -->
+        <section class="aba-conteudo" id="dividir">
+            <h2>Dividir um PDF em páginas separadas</h2>
+            <form id="form-dividir">
+                <input type="file" name="arquivo" accept=".pdf" required>
+                <button type="submit">Dividir PDF</button>
+            </form>
+            <div class="status" id="status-dividir"></div>
+        </section>
+
+        <!-- COMPRIMIR -->
+        <section class="aba-conteudo" id="comprimir">
+            <h2>Comprimir PDF (reduzir tamanho)</h2>
+            <p class="aviso">Otimização sem perda de qualidade (via QPDF).</p>
+            <form id="form-comprimir">
+                <input type="file" name="arquivo" accept=".pdf" required>
+                <button type="submit">Comprimir PDF</button>
+            </form>
+            <div class="status" id="status-comprimir"></div>
+        </section>
+
+        <!-- PDF -> WORD -->
+        <section class="aba-conteudo" id="pdf-word">
+            <h2>Converter PDF para Word</h2>
+            <form id="form-pdf-word">
+                <input type="file" name="arquivo" accept=".pdf" required>
+                <button type="submit">Converter para Word</button>
+            </form>
+            <div class="status" id="status-pdf-word"></div>
+        </section>
+
+        <!-- WORD -> PDF -->
+        <section class="aba-conteudo" id="word-pdf">
+            <h2>Converter Word para PDF</h2>
+            <form id="form-word-pdf">
+                <input type="file" name="arquivo" accept=".docx" required>
+                <button type="submit">Converter para PDF</button>
+            </form>
+            <div class="status" id="status-word-pdf"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>made by me </p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
