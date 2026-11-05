@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Usuários - Ferramentas PDF</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Usu\u00e1rios";
+        var mkdocs_page_input_path = "usuarios.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Ferramentas PDF
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Início</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Instalação</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../requisitado/">Requisitos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../instalacao/">Instalação</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuracao/">Configuração do ambiente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../deploy/">Deploy</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Uso</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../CSS/">CSS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../HTML/">HTML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../geral_do_site/">Geral do site</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../java-js/">JavaScript</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python/">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../log_do_admin/">Log do administrador</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Administração</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../admin/">Área administrativa</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Usuários</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#visao-geral">Visão geral</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#como-acessar">Como acessar</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pagina-inicial">Página inicial</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fazer-login">Fazer login</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#upload-de-arquivos">Upload de arquivos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#regras-importantes">Regras importantes</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#visualizar-documentos">Visualizar documentos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#buscar-arquivos">Buscar arquivos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#organizacao-dos-arquivos">Organização dos arquivos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#permissoes-de-acesso">Permissões de acesso</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#seguranca-e-boas-praticas">Segurança e boas práticas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problemas-comuns">Problemas comuns</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#nao-consigo-entrar-no-sistema">Não consigo entrar no sistema</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#o-arquivo-nao-foi-carregado">O arquivo não foi carregado</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#o-documento-nao-aparece-na-busca">O documento não aparece na busca</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#suporte">Suporte</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#observacoes">Observações</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#politica-de-uso">Política de uso</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../logs/">Logs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../backup/">Backup</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Suporte</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Problemas e soluções</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../suporte/">Contato</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Ferramentas PDF</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Administração</li>
+      <li class="breadcrumb-item active">Usuários</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="manual-do-usuario">Manual do Usuário</h1>
+<h2 id="visao-geral">Visão geral</h2>
+<p>Este sistema permite o envio, organização, busca e visualização de arquivos em PDF. O objetivo é facilitar o acesso e a gestão documental de forma prática e segura.</p>
+<h2 id="como-acessar">Como acessar</h2>
+<ol>
+<li>Abra o navegador e acesse a URL do sistema.</li>
+<li>Informe seu usuário e senha.</li>
+<li>Clique em "Entrar".</li>
+<li>Se o sistema tiver autenticação em duas etapas, confirme o código recebido.</li>
+</ol>
+<h2 id="pagina-inicial">Página inicial</h2>
+<p>Após fazer login, você será direcionado para o painel principal, onde poderá ver:
+- arquivos recentes
+- documentos compartilhados
+- opções de busca
+- notificações e alertas
+- ações de upload e download</p>
+<h2 id="fazer-login">Fazer login</h2>
+<ol>
+<li>Digite seu e-mail ou usuário no campo correspondente.</li>
+<li>Informe a senha cadastrada.</li>
+<li>Clique em "Entrar".</li>
+<li>Caso tenha esquecido a senha, use o botão "Esqueci minha senha".</li>
+</ol>
+<h2 id="upload-de-arquivos">Upload de arquivos</h2>
+<ol>
+<li>Na área principal, clique em "Upload" ou "Enviar arquivo".</li>
+<li>Selecione o arquivo em PDF.</li>
+<li>Verifique o nome do arquivo e a categoria, se houver.</li>
+<li>Clique em "Confirmar envio".</li>
+<li>Aguarde a confirmação de conclusão.</li>
+</ol>
+<h3 id="regras-importantes">Regras importantes</h3>
+<ul>
+<li>O arquivo deve estar em formato PDF.</li>
+<li>Verifique o tamanho máximo permitido.</li>
+<li>Não envie documentos corrompidos ou incompletos.</li>
+<li>Mantenha nomes claros e organizados.</li>
+</ul>
+<h2 id="visualizar-documentos">Visualizar documentos</h2>
+<ol>
+<li>Localize o arquivo na lista ou na busca.</li>
+<li>Clique sobre o nome do documento.</li>
+<li>O PDF será aberto no visualizador interno.</li>
+<li>Você pode:</li>
+<li>ampliar ou reduzir a visualização</li>
+<li>navegar entre páginas</li>
+<li>baixar o arquivo</li>
+<li>imprimir, se permitido</li>
+</ol>
+<h2 id="buscar-arquivos">Buscar arquivos</h2>
+<p>Para localizar um documento rapidamente:
+- use a barra de pesquisa
+- filtre por data, categoria ou nome
+- ordene a lista por relevância ou data</p>
+<h2 id="organizacao-dos-arquivos">Organização dos arquivos</h2>
+<p>Os arquivos podem ser organizados por:
+- categoria
+- data de envio
+- nome do documento
+- usuário responsável
+- pasta ou grupo</p>
+<p>Se o sistema disponibilizar pastas ou etiquetas, utilize-as para manter a organização.</p>
+<h2 id="permissoes-de-acesso">Permissões de acesso</h2>
+<p>Os usuários podem ter diferentes níveis de acesso:</p>
+<ul>
+<li>Administrador: acessa todas as funções e configurações</li>
+<li>Editor: pode enviar, editar e organizar arquivos</li>
+<li>Visualizador: pode consultar arquivos apenas em leitura</li>
+</ul>
+<h2 id="seguranca-e-boas-praticas">Segurança e boas práticas</h2>
+<ul>
+<li>Nunca compartilhe sua senha</li>
+<li>Faça logout ao terminar o uso</li>
+<li>Use um navegador atualizado</li>
+<li>Verifique se a URL do sistema está correta</li>
+<li>Informe imediatamente qualquer suspeita de acesso indevido</li>
+</ul>
+<h2 id="problemas-comuns">Problemas comuns</h2>
+<h3 id="nao-consigo-entrar-no-sistema">Não consigo entrar no sistema</h3>
+<p>Possíveis causas:
+- senha incorreta
+- usuário bloqueado
+- conta inativa
+- problema de autenticação</p>
+<p>Soluções:
+- verifique os dados de login
+- use "Esqueci minha senha"
+- contate o administrador se o acesso continuar bloqueado</p>
+<h3 id="o-arquivo-nao-foi-carregado">O arquivo não foi carregado</h3>
+<p>Possíveis causas:
+- arquivo em formato inválido
+- tamanho acima do permitido
+- falha temporária do sistema</p>
+<p>Soluções:
+- confirme se o arquivo é PDF
+- reduza o tamanho, se necessário
+- tente novamente
+- contate o suporte se o problema persistir</p>
+<h3 id="o-documento-nao-aparece-na-busca">O documento não aparece na busca</h3>
+<p>Possíveis causas:
+- arquivo ainda está processando
+- nome do documento não corresponde à busca
+- filtro aplicado indevidamente</p>
+<p>Soluções:
+- aguarde alguns minutos
+- remova filtros
+- verifique se o arquivo foi enviado corretamente</p>
+<h2 id="suporte">Suporte</h2>
+<p>Se precisar de ajuda, entre em contato com:
+- E-mail: gabriel.augusto4215@gmail.com
+- Telefone: 35 991134215
+- Horário de atendimento: [08hrs - 15hrs]</p>
+<h2 id="observacoes">Observações</h2>
+<ul>
+<li>Mantenha seus dados de acesso seguros</li>
+<li>Use nomes claros nos arquivos</li>
+<li>Siga as regras da organização</li>
+<li>Informe qualquer erro ou problema ao suporte</li>
+</ul>
+<h2 id="politica-de-uso">Política de uso</h2>
+<p>O usuário deve utilizar o sistema apenas para fins autorizados pela organização. A divulgação de documentos, compartilhamento indevido de senhas e o uso não autorizado da plataforma podem resultar em restrição de acesso.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../admin/" class="btn btn-neutral float-left" title="Área administrativa"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../logs/" class="btn btn-neutral float-right" title="Logs">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../admin/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../logs/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+site_name: Ferramentas PDF
+docs_dir: docs
+
+nav:
+  - Início: index.md
+
+  - Instalação:
+      - Requisitos: requisitado.md
+      - Instalação: instalacao.md
+      - Configuração do ambiente: configuracao.md
+      - Deploy: deploy.md
+
+  - Uso:
+      - CSS: CSS.md
+      - HTML: HTML.md
+      - Geral do site: geral_do_site.md
+      - JavaScript: java-js.md
+      - Python: python.md
+      - Log do administrador: log_do_admin.md
+
+  - Administração:
+      - Área administrativa: admin.md
+      - Usuários: usuarios.md
+      - Logs: logs.md
+      - Backup: backup.md
+
+  - Suporte:
+      - FAQ: faq.md
+      - Problemas e soluções: troubleshooting.md
+      - Contato: suporte.md
+
+theme:
+  name: readthedocs
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top

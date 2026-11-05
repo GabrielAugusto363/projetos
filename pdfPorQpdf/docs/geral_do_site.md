@@ -1,0 +1,11 @@
+## Visão geral do site
+
+O projeto consiste em uma aplicação web desenvolvida em Flask para manipulação de arquivos PDF. A plataforma oferece ferramentas para juntar, dividir, comprimir e converter arquivos PDF para Word, tudo em uma interface simples e acessível. O objetivo principal foi criar um sistema prático para uso interno, funcionando em rede local, com processamento direto no navegador e download dos arquivos resultantes.
+
+A aplicação foi estruturada em camadas bem definidas. A parte visual foi desenvolvida em HTML e CSS, com uma interface em abas para separar cada funcionalidade. O comportamento dinâmico foi implementado em JavaScript, responsável por enviar os formulários para a API e tratar respostas, mensagens de status e downloads automáticos. Já o backend em Python, no arquivo principal `app.py`, centraliza a lógica de processamento dos arquivos, validação dos documentos, manipulação de PDF e retorno dos resultados para o cliente.
+
+Entre as principais funcionalidades, está a junção de vários PDFs em um único arquivo, a divisão do documento em páginas separadas ou em intervalos selecionados, a compressão para reduzir o tamanho do arquivo e a conversão de PDF para Word. A compressão foi implementada com diferentes metodologias, dependendo do nível escolhido pelo usuário, buscando um equilíbrio entre redução de peso e qualidade visual. A conversão para Word foi feita com a biblioteca `pdf2docx`, permitindo que o conteúdo do PDF seja transformado em um arquivo DOCX para edição posterior.
+
+Além das funções de processamento, o sistema também conta com um painel administrativo de monitoramento. Esse módulo registra acessos, erros, arquivos enviados, computadores conectados e histórico de entrada e saída dos usuários. Também foi implementada a geração de relatórios diários em ZIP ou CSV, facilitando a organização e o acompanhamento do uso do sistema.
+
+Em resumo, o site funciona como uma ferramenta completa de gestão e processamento de PDFs, reunindo recursos práticos em uma única interface. Ele foi pensado para ser simples de usar, eficiente no processamento e útil para ambientes internos com uso recorrente de documentos digitais.

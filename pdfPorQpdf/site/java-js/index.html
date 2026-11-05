@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>JavaScript - Ferramentas PDF</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "JavaScript";
+        var mkdocs_page_input_path = "java-js.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Ferramentas PDF
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Início</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Instalação</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../requisitado/">Requisitos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../instalacao/">Instalação</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuracao/">Configuração do ambiente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../deploy/">Deploy</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Uso</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../CSS/">CSS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../HTML/">HTML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../geral_do_site/">Geral do site</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">JavaScript</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-troca-de-abas">1. Troca de abas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-funcao-padrao-de-envio-de-formularios">2. Função padrão de envio de formulários</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-inicializacao-dos-formularios">3. Inicialização dos formulários</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-heartbeat-do-painel-administrativo">4. Heartbeat do painel administrativo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-conclusao">5. Conclusão</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python/">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../log_do_admin/">Log do administrador</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Administração</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../admin/">Área administrativa</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../usuarios/">Usuários</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../logs/">Logs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../backup/">Backup</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Suporte</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Problemas e soluções</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../suporte/">Contato</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Ferramentas PDF</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Uso</li>
+      <li class="breadcrumb-item active">JavaScript</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="parte-do-javascript">Parte do JavaScript</h2>
+<p>O arquivo <code>script.js</code> foi responsável por controlar a interação entre a interface HTML e as rotas da API em Flask. Sua função principal foi conectar cada formulário da página com o backend, permitindo que o envio de arquivos e o download do resultado aconteçam de forma automática e dinâmica.</p>
+<h3 id="1-troca-de-abas">1. Troca de abas</h3>
+<p>No início do script, foi implementada a lógica para alternar as abas da interface:</p>
+<ul>
+<li><code>botoesAba</code></li>
+<li><code>conteudosAba</code></li>
+</ul>
+<p>A cada clique em um botão com a classe <code>.aba-btn</code>, o código:</p>
+<ol>
+<li>remove a classe <code>ativo</code> de todos os botões</li>
+<li>remove a classe <code>ativo</code> de todos os conteúdos</li>
+<li>marca o botão clicado como ativo</li>
+<li>mostra o conteúdo correspondente pelo <code>data-aba</code></li>
+</ol>
+<p>Essa parte é essencial porque a página usa uma estrutura de abas para separar as ferramentas de PDF em um único layout.</p>
+<hr />
+<h3 id="2-funcao-padrao-de-envio-de-formularios">2. Função padrão de envio de formulários</h3>
+<p>A função principal foi <code>enviarFormulario(formId, url, statusId, nomeArquivoPadrao)</code>. Ela é reutilizada para os quatro serviços:</p>
+<ul>
+<li>juntar</li>
+<li>dividir</li>
+<li>comprimir</li>
+<li>PDF → Word</li>
+</ul>
+<p>Essa função:</p>
+<ul>
+<li>pega o formulário pelo ID</li>
+<li>pega a div de status</li>
+<li>adiciona um evento <code>submit</code></li>
+<li>impede o comportamento padrão do formulário</li>
+<li>coleta os dados com <code>FormData</code></li>
+<li>envia via <code>fetch</code> para a rota correta</li>
+<li>mostra mensagem de “Processando... aguarde.”</li>
+<li>desabilita o botão para evitar múltiplos envios</li>
+<li>trata respostas de sucesso e erro</li>
+<li>faz download automático do arquivo retornado</li>
+</ul>
+<p>Se a resposta da API não for OK, o código verifica:</p>
+<ul>
+<li>se o erro é de tamanho excedido (<code>413</code>)</li>
+<li>ou se a API retornou uma mensagem em JSON</li>
+<li>ou se o erro não foi especificado</li>
+</ul>
+<p>A mensagem então é exibida na área de status, com classe visual de erro.</p>
+<p>Se a resposta for bem-sucedida, o script:</p>
+<ul>
+<li>lê o cabeçalho <code>Content-Disposition</code></li>
+<li>identifica o nome do arquivo que será baixado</li>
+<li>cria um <code>Blob</code> com a resposta</li>
+<li>cria um link temporário</li>
+<li>dispara o download automaticamente</li>
+<li>remove o link depois do processo</li>
+</ul>
+<p>Esse método é eficiente porque permite baixar o arquivo sem precisar abrir uma nova página ou navegar para outra rota.</p>
+<hr />
+<h3 id="3-inicializacao-dos-formularios">3. Inicialização dos formulários</h3>
+<p>Após a criação da função, ela é chamada para cada formulário da interface:</p>
+<ul>
+<li><code>form-juntar</code> → <code>/api/juntar</code></li>
+<li><code>form-dividir</code> → <code>/api/dividir</code></li>
+<li><code>form-comprimir</code> → <code>/api/comprimir</code></li>
+<li><code>form-pdf-word</code> → <code>/api/pdf-para-word</code></li>
+</ul>
+<p>Cada chamada define o nome padrão do arquivo de saída:</p>
+<ul>
+<li><code>juntado.pdf</code></li>
+<li><code>paginas_divididas.zip</code></li>
+<li><code>comprimido.pdf</code></li>
+<li><code>convertido.docx</code></li>
+</ul>
+<p>Isso é importante porque o navegador precisa saber o nome do arquivo que será baixado quando a resposta chega.</p>
+<hr />
+<h3 id="4-heartbeat-do-painel-administrativo">4. Heartbeat do painel administrativo</h3>
+<p>Além das funcionalidades de processamento, o script também implementa um heartbeat para registrar a presença dos usuários no admin.</p>
+<p>A função <code>enviarHeartbeat()</code> faz um <code>fetch</code> para:</p>
+<ul>
+<li><code>/api/heartbeat</code></li>
+</ul>
+<p>Esse envio é realizado:</p>
+<ul>
+<li>imediatamente ao carregar a página</li>
+<li>e depois a cada 60 segundos</li>
+</ul>
+<p>A intenção dessa lógica é manter o sistema atualizado sobre quem está online e quando o usuário saiu.</p>
+<p>Também existe um evento:</p>
+<ul>
+<li><code>beforeunload</code></li>
+</ul>
+<p>que usa <code>navigator.sendBeacon("/api/heartbeat/saida")</code> para registrar a saída do usuário ao fechar a aba ou sair da página.</p>
+<p>Esse mecanismo é útil para a parte administrativa do sistema, permitindo monitorar acessos e manter o histórico de usuários conectados.</p>
+<hr />
+<h3 id="5-conclusao">5. Conclusão</h3>
+<p>O JavaScript foi responsável por conectar visualmente a interface com a lógica do backend e pela automação dos fluxos de upload e download. Ele centralizou a operação de processamento dos formulários e também deu suporte ao monitoramento do painel administrativo com heartbeat. Em resumo, o script atua como camada de comunicação entre usuário e servidor.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../geral_do_site/" class="btn btn-neutral float-left" title="Geral do site"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../python/" class="btn btn-neutral float-right" title="Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../geral_do_site/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../python/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
