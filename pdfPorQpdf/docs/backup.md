@@ -1,2 +1,0 @@
-
-Esse conteúdo está alinhado com o funcionamento atual do `app.py`, incluindo a exportação administrativa dos logs em `logs_backup.zip`.Esse conteúdo está alinhado com o funcionamento atual do `app.py`, incluindo a exportação administrativa dos logs em `logs_backup.zip`.
