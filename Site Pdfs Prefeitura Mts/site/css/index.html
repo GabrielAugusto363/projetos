@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>CSS - Ferramentas PDF</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CSS";
+        var mkdocs_page_input_path = "CSS.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Ferramentas PDF
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Início</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Instalação</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../requisitado/">Requisitos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../instalacao/">Instalação</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuracao/">Configuração do ambiente</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../deploy/">Deploy</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Uso</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">CSS</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-reset-e-base-visual">1. Reset e base visual</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-cabecalho">2. Cabeçalho</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-navegacao-em-abas">3. Navegação em abas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-conteudo-principal">4. Conteúdo principal</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-formularios-e-campos-de-entrada">5. Formulários e campos de entrada</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-status-do-processamento">6. Status do processamento</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-rodape">7. Rodapé</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-conclusao">8. Conclusão</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../HTML/">HTML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../geral_do_site/">Geral do site</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../java-js/">JavaScript</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../python/">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../log_do_admin/">Log do administrador</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Administração</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../admin/">Área administrativa</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../usuarios/">Usuários</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../logs/">Logs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../backup/">Backup</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Suporte</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Problemas e soluções</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../suporte/">Contato</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Ferramentas PDF</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Uso</li>
+      <li class="breadcrumb-item active">CSS</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="parte-do-css">Parte do CSS</h2>
+<p>O estilo da aplicação foi implementado em <code>style.css</code> para dar uma aparência visual limpa, moderna e funcional ao site. A estrutura de design foi pensada para manter o foco nas ferramentas de PDF, com um layout simples, fácil de usar e responsivo.</p>
+<h3 id="1-reset-e-base-visual">1. Reset e base visual</h3>
+<p>No início do arquivo, foi aplicado um reset geral com:</p>
+<ul>
+<li><code>box-sizing: border-box</code></li>
+<li><code>margin: 0</code></li>
+<li><code>padding: 0</code></li>
+<li>definição da fonte principal como <code>Segoe UI</code>, Arial, sans-serif</li>
+</ul>
+<p>Esse reset garante consistência visual entre navegadores e evita espaçamentos inconsistentes no layout.</p>
+<p>A base do corpo da página foi definida com:</p>
+<ul>
+<li>fundo claro em tons cinza</li>
+<li>cor do texto escura</li>
+<li>sem estilos muito carregados para manter a legibilidade</li>
+</ul>
+<hr />
+<h3 id="2-cabecalho">2. Cabeçalho</h3>
+<p>O <code>header</code> foi estilizado com um degradê em vermelho e azul, criando um visual mais chamativo e institucional. Ele possui:</p>
+<ul>
+<li>alinhamento central do texto</li>
+<li>espaçamento interno maior</li>
+<li>cor branca para contraste</li>
+<li>destaque visual para o nome do site</li>
+</ul>
+<p>O título principal <code>h1</code> foi ajustado com tamanho maior para dar destaque à marca da aplicação.</p>
+<hr />
+<h3 id="3-navegacao-em-abas">3. Navegação em abas</h3>
+<p>A classe <code>.abas</code> foi configurada como um container flexível, com:</p>
+<ul>
+<li>disposição horizontal</li>
+<li>quebra de linha quando necessário</li>
+<li>centralização dos botões</li>
+<li>espaçamento entre os itens</li>
+</ul>
+<p>Os botões de aba <code>.aba-btn</code> receberam:</p>
+<ul>
+<li>fundo cinza claro</li>
+<li>borda arredondada</li>
+<li>texto escuro</li>
+<li>cursor de clique</li>
+<li>transição suave ao passar o mouse</li>
+</ul>
+<p>Quando a aba está ativa, a classe <code>.aba-btn.ativo</code> muda para:</p>
+<ul>
+<li>fundo vermelho escuro</li>
+<li>texto branco</li>
+<li>destaque visual maior</li>
+</ul>
+<p>Esse estilo foi importante para reforçar a navegação entre as ferramentas e indicar qual funcionalidade está selecionada.</p>
+<hr />
+<h3 id="4-conteudo-principal">4. Conteúdo principal</h3>
+<p>O <code>main</code> foi centralizado com largura máxima e espaçamento lateral, criando uma área de conteúdo visualmente organizada. Foi usado um <code>max-width</code> para impedir que o layout se espalhe demais em telas largas.</p>
+<p>As seções de conteúdo <code>.aba-conteudo</code> foram estilizadas com:</p>
+<ul>
+<li>fundo branco</li>
+<li>borda arredondada</li>
+<li>sombra suave</li>
+<li>padding interno</li>
+<li>exibição controlada pelo JavaScript</li>
+</ul>
+<p>Quando a classe <code>.ativo</code> é aplicada, a seção passa a mostrar o conteúdo. Sem essa classe, a seção permanece oculta.</p>
+<p>Os títulos das abas <code>h2</code> receberam uma cor azul escura para manter uma padronização visual.</p>
+<hr />
+<h3 id="5-formularios-e-campos-de-entrada">5. Formulários e campos de entrada</h3>
+<p>Os formulários foram configurados em coluna, com espaçamento uniforme entre os elementos. Isso garante uma organização clara dos campos de upload, select e botões.</p>
+<p>Os campos de input receberam:</p>
+<ul>
+<li>borda destacada</li>
+<li>fundo quase branco</li>
+<li>arredondamento</li>
+<li>área de interação visualmente limpa</li>
+</ul>
+<p>O select também foi estilizado com borda e padding para manter consistência com os outros campos.</p>
+<p>O botão de envio <code>button[type="submit"]</code> foi estilizado em vermelho, com:</p>
+<ul>
+<li>texto branco</li>
+<li>borda arredondada</li>
+<li>hover em vermelho mais escuro</li>
+<li>cursor clicável</li>
+</ul>
+<p>Quando o botão está desabilitado, o estilo muda para cinza, indicando que a operação está em andamento.</p>
+<hr />
+<h3 id="6-status-do-processamento">6. Status do processamento</h3>
+<p>A área <code>.status</code> foi configurada para exibir mensagens de retorno do sistema, como:</p>
+<ul>
+<li>sucesso</li>
+<li>erro</li>
+<li>carregamento</li>
+</ul>
+<p>Essas classes possuem cores diferentes:</p>
+<ul>
+<li><code>.status.sucesso</code> em verde</li>
+<li><code>.status.erro</code> em vermelho</li>
+<li><code>.status.carregando</code> em cinza escuro</li>
+</ul>
+<p>Isso melhora a experiência do usuário, porque ele consegue identificar visualmente se a operação foi concluída com sucesso ou se ocorreu um problema.</p>
+<hr />
+<h3 id="7-rodape">7. Rodapé</h3>
+<p>O footer foi estilizado com:</p>
+<ul>
+<li>texto centralizado</li>
+<li>cor cinza</li>
+<li>tamanho menor</li>
+<li>espaçamento confortável</li>
+</ul>
+<p>Esse acabamento ajuda a fechar a página de forma visualmente equilibrada.</p>
+<hr />
+<h3 id="8-conclusao">8. Conclusão</h3>
+<p>O CSS foi responsável por deixar a interface do projeto organizada, profissional e fácil de usar. O uso de cores, espaçamentos, sombras e navegação em abas contribui para uma experiência visual clara, permitindo que as funcionalidades de PDF fiquem acessíveis e intuitivas para o usuário.</p>
+<p>Se quiser, posso fazer também:
+- uma versão mais técnica do CSS
+- uma versão mais curta para relatório
+- uma explicação de cada classe do arquivo
+- um texto pronto para documentação do projeto</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../deploy/" class="btn btn-neutral float-left" title="Deploy"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../HTML/" class="btn btn-neutral float-right" title="HTML">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../deploy/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../HTML/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
